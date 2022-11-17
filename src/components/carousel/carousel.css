@@ -1,0 +1,16 @@
+.window {
+  margin: auto;
+  background: coral;
+  width: 350px;
+  height: 250px;
+
+  overflow: hidden;
+}
+.flexbox {
+  display: flex;
+}
+
+img {
+  width: 120px;
+  height: auto;
+}
