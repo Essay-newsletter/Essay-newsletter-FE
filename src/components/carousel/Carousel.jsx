@@ -16,16 +16,22 @@ const CarouselSection = styled.div`
 `;
 
 const PageImage = styled.img`
-  width: =160px;
+  width: 160px;
 `;
 const StyledSlider = styled(Slider)`
   .slick-list {
     width: auto;
+    height: 200px;
   }
 
   .slick-slide div {
+    display: flex;
+    img {
+      margin: auto;
+    }
   }
 `;
+
 export default function Carousel() {
   const settings = {
     dots: true,
@@ -33,7 +39,7 @@ export default function Carousel() {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3000,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "0px",
@@ -53,6 +59,21 @@ export default function Carousel() {
         </div>
         <div>
           <PageImage src={marketing4}></PageImage>
+        </div>
+        <div>
+          <PageImage src={marketing5}></PageImage>
+        </div>
+        <div>
+          <PageImage src={marketing5}></PageImage>
+        </div>
+        <div>
+          <PageImage src={marketing5}></PageImage>
+        </div>
+        <div>
+          <PageImage src={marketing5}></PageImage>
+        </div>
+        <div>
+          <PageImage src={marketing5}></PageImage>
         </div>
         <div>
           <PageImage src={marketing5}></PageImage>
