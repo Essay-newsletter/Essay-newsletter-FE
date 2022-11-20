@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Home from "../pages/home/Home";
+
 import { Link } from "react-router-dom";
 const NavibarSection = styled.div`
   position: fixed;
@@ -15,10 +15,10 @@ const NavibarSection = styled.div`
   z-index: 10;
 `;
 
-const Bar = styled.div`
-  width: 100%;
-  height: 100%;
-`;
+// const Bar = styled.div`
+//   width: 100%;
+//   height: 100%;
+// `;
 
 const NavBox = styled.ul`
   margin-left: 40%;

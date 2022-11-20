@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 import Navibar from "../../navibar/Navibar";
 
@@ -67,11 +67,11 @@ const LoginTool = styled.div`
   background-color: gray;
 `;
 
-const KakaoBox = styled.div`
-  width: 260px;
-  height: 40px;
-  margin: auto;
-`;
+// const KakaoBox = styled.div`
+//   width: 260px;
+//   height: 40px;
+//   margin: auto;
+// `;
 
 export default function Login() {
   return (

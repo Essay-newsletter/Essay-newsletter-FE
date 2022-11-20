@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import arrow_img from "../../assets/img/arrow_forward_FILL0_wght400_GRAD0_opsz48.png";
 
 const Page = styled.div`
   display: grid;
@@ -24,21 +23,21 @@ const Content = styled.p`
   text-align: center;
 `;
 
-const DescImg = styled.div`
-  width: 100%;
-  height: auto;
-`;
-const MainImg = styled.img`
-  display: block;
-  width: 700px;
-  height: 400px;
-  border-radius: 8px;
-  margin: auto;
+// const DescImg = styled.div`
+//   width: 100%;
+//   height: auto;
+// `;
+// const MainImg = styled.img`
+//   display: block;
+//   width: 700px;
+//   height: 400px;
+//   border-radius: 8px;
+//   margin: auto;
 
-  align-items: center;
-  justify-content: center;
-  opacity: 0.5;
-`;
+//   align-items: center;
+//   justify-content: center;
+//   opacity: 0.5;
+// `;
 
 const DescRegister = styled.div`
   grid-row-gap: 80px;
@@ -71,7 +70,7 @@ const Register = styled.button`
     color : black;
 `;
 
-const Register_text = styled.p`
+const RegisterText = styled.p`
   margin: auto;
 
   height: auto;
@@ -79,12 +78,12 @@ const Register_text = styled.p`
   text-align: center;
 `;
 
-const ButtonImg = styled.img`
-  width: 24px;
-  color: #fffff8;
-  font-size: 20px;
-  font-weight: 100;
-`;
+// const ButtonImg = styled.img`
+//   width: 24px;
+//   color: #fffff8;
+//   font-size: 20px;
+//   font-weight: 100;
+// `;
 
 export default function MainPage() {
   return (
@@ -102,7 +101,7 @@ export default function MainPage() {
         </Desc>
         <DescRegister>
           <Register>
-            <Register_text>작가 등록하기</Register_text>
+            <RegisterText>작가 등록하기</RegisterText>
           </Register>
           <Register>작가 검색하기</Register>
         </DescRegister>
