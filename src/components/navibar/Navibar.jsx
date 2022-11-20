@@ -4,13 +4,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 const NavibarSection = styled.div`
   position: fixed;
-  height: 8%;
+  height: 10%;
   display: flex;
   width: 100%;
-
   align-items: center;
   border-bottom: 1px solid #d9d9d9;
-  padding: 8px 12px;
+  padding: 4px 12px 0;
   background-color: white;
   z-index: 10;
 `;
@@ -59,8 +58,8 @@ const Logo = styled(Link)`
   font-family: 나눔고딕;
 `;
 const LoginBox = styled.button`
-  height: 40px;
-  width: 100px;
+  height: 5vh;
+  width: 7.5vw;
   align-items: center;
   text-aglin: center;
 
