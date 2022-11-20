@@ -12,6 +12,7 @@ const NavibarSection = styled.div`
   border-bottom: 1px solid #d9d9d9;
   padding: 8px 12px;
   background-color: white;
+  z-index: 10;
 `;
 
 const Bar = styled.div`

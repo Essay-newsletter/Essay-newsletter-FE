@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Carousel from "../../carousel/Carousel";
+import Carousel from "components/carousel/Carousel";
+import TextList from "components/category/TextList";
 
 const Page = styled.div`
-  margin-top: ;
-  height: 100vh;
+  margin-top: 0;
+  height: 100%;
   width: 100%;
-  background-color: #white;
+  background-color: white;
 `;
 const Desc = styled.div`
   width: 100%;
@@ -21,6 +22,9 @@ export default function SubPage() {
       <Page>
         <Desc>
           <StyledCarousel />
+        </Desc>
+        <Desc>
+          <TextList />
         </Desc>
       </Page>
     </>
