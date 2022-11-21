@@ -57,7 +57,7 @@ const Register = styled.button`
   background-color:#98916D;
   color: #FFFFF8;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 400;
   cursor: pointer;
   border-radius: 80px;
    
