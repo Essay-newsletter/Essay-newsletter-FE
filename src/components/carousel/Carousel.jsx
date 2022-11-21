@@ -9,6 +9,7 @@ import marketing2 from "../assets/img/marketing2.jpg";
 import marketing3 from "../assets/img/marketing3.jpg";
 import marketing4 from "../assets/img/marketing4.jpg";
 import marketing5 from "../assets/img/marketing5.jpg";
+import marketing6 from "../assets/img/marketing6.png";
 
 //width를 auto로
 const CarouselSection = styled.div`
@@ -85,7 +86,7 @@ export default function Carousel() {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3000,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "0px",
@@ -120,6 +121,9 @@ export default function Carousel() {
         </div>
         <div className="d">
           <PageImage src={marketing5}></PageImage>
+        </div>
+        <div className="d">
+          <PageImage src={marketing6}></PageImage>
         </div>
       </StyledSlider>
     </CarouselSection>

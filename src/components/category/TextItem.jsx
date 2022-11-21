@@ -4,6 +4,7 @@ import styled from "styled-components";
 const TextItemBlock = styled.div`
   display: flex;
   border: 1px solid #d9d9d9;
+  border-radius: 4px;
   height: 120px;
   .thumbnail {
     img {
@@ -19,9 +20,13 @@ const TextItemBlock = styled.div`
   .contents {
     h2 {
       margin: 0;
-      a {
-        color: black;
-      }
+    }
+    a {
+      // color: black;
+    }
+    span {
+      line-height: 1.5;
+      margin-top: 0.5rem;
     }
     p {
       margin: 0;
@@ -36,23 +41,23 @@ const TextItemBlock = styled.div`
 `;
 
 export default function TextItem({ data }) {
-  const { title, description, url, urlToImage } = data;
+  const { title, image, content, instargram, url, urlToImage } = data;
   return (
     <TextItemBlock>
       {urlToImage && (
         <div className="thumbnail">
           <a href={url} target="_blank" rel="noopener noreferrer">
-            <img src={urlToImage} alt="thumbnail"></img>
+            <img src={image} alt="thumbnail"></img>
           </a>
         </div>
       )}
       <div className="contents">
-        <h2>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            {title}
-          </a>
-        </h2>
-        <p>{description}</p>
+        <h2>{title}</h2>
+        <p>{content}</p>
+        <span>{instargram}: </span>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <span>{url}</span>
+        </a>
       </div>
     </TextItemBlock>
   );

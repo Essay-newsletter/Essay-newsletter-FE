@@ -38,11 +38,9 @@ const TextList = () => {
   return (
     <TextItemBlock>
       <h2>작품 보기</h2>
-      <TextItem data={writer.data[0]} />
-      <TextItem data={writer.data[1]} />
-      <TextItem data={writer.data[2]} />
-      <TextItem data={writer.data[3]} />
-      <TextItem data={writer.data[4]} />
+      {writer.data.map((v) => (
+        <TextItem key={v.id} data={v} />
+      ))}
     </TextItemBlock>
   );
 };
