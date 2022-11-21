@@ -10,7 +10,7 @@ export const dummy = {
     {
       id: 1,
       image: insta_sullalee,
-      title: "이슬아 작가님",
+      title: "이슬아",
       content: "작품 소개",
       instargram: "instargram",
       url: "https://www.instagram.com/sullalee/",
@@ -19,7 +19,7 @@ export const dummy = {
     {
       id: 2,
       image: insta_moonbong,
-      title: "문보영 작가님",
+      title: "문보영",
       content: "작품 소개",
       instargram: "instargram",
       url: "https://www.instagram.com/opendooropenit/",
@@ -37,7 +37,7 @@ export const dummy = {
     {
       id: 3,
       image: insta_woowrong,
-      title: "우롱센텐스 작가님",
+      title: "우롱센텐스",
       content: "작품 소개",
       instargram: "instargram",
       url: "https://www.instagram.com/wrong_sentence/",
@@ -46,7 +46,7 @@ export const dummy = {
     {
       id: 4,
       image: insta_hayne,
-      title: "서해인 작가님",
+      title: "서해인",
       content: "작품 소개",
       instargram: "instargram",
       url: "https://www.instagram.com/browneyedseoul/?next=%2Fopendooropenit%2F",

@@ -3,9 +3,11 @@ import styled from "styled-components";
 
 const TextItemBlock = styled.div`
   display: flex;
-  border: 1px solid #d9d9d9;
+  border: 2px solid #d9d9d9;
   border-radius: 4px;
   height: 120px;
+  box-shadow: 2px 2px 2px 1px #d9d9d9;
+
   .thumbnail {
     img {
       margin-right: 1rem;

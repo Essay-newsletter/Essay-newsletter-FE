@@ -60,12 +60,12 @@ const LoginButton = styled.button`
   margin-top: 20px;
 `;
 
-const LoginTool = styled.div`
-  width: 260px;
-  height: 40px;
-  margin: auto;
-  background-color: gray;
-`;
+// const LoginTool = styled.div`
+//   width: 260px;
+//   height: 40px;
+//   margin: auto;
+//   background-color: gray;
+// `;
 
 // const KakaoBox = styled.div`
 //   width: 260px;
@@ -83,7 +83,7 @@ export default function Login() {
           <InputId placeholder="I D"></InputId>
           <InputPw placeholder="P W"></InputPw>
           <LoginButton>로그인</LoginButton>
-          <LoginTool></LoginTool>
+          {/* <LoginTool></LoginTool> */}
         </Desc>
       </Page>
     </Sections>

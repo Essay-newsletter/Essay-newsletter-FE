@@ -11,16 +11,18 @@ const Page = styled.div`
 const Desc = styled.div`
   width: 100%;
   height: auto;
-  margin: 12% auto auto auto;
+  margin: 16% auto auto auto;
 `;
 const Title = styled.h1`
   font-size: 700;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
   text-align: center;
+  color: #292a34;
 `;
 const Content = styled.p`
   font-size: 480;
   text-align: center;
+  color: #3a3c4e;
 `;
 
 // const DescImg = styled.div`
@@ -43,7 +45,8 @@ const DescRegister = styled.div`
   grid-row-gap: 80px;
   display: grid;
   width: 100%;
-  height: 50%;
+  height: auto;
+  padding-bottom: 12%;
 `;
 
 const Register = styled.button`
@@ -100,10 +103,13 @@ export default function MainPage() {
           </Content>
         </Desc>
         <DescRegister>
-          <Register>
+          <Register
+            onClick={() => {
+              alert("개발 중");
+            }}
+          >
             <RegisterText>작가 등록하기</RegisterText>
           </Register>
-          <Register>작가 검색하기</Register>
         </DescRegister>
       </Page>
     </>

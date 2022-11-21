@@ -50,7 +50,7 @@ const Logo = styled(Link)`
   display: flex;
   left: 50%;
   top: 50%;
-  color: black;
+  color: #292a34;
   text-decoration-line: none;
   text-decoration-line: none;
   font-size: 24px;

@@ -75,7 +75,7 @@ const StyledSlider = styled(Slider)`
 `;
 
 const Title = styled.h2`
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   margin-bottom: 24px;
 `;
 

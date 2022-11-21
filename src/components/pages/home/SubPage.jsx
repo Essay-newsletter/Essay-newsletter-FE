@@ -4,7 +4,7 @@ import Carousel from "components/carousel/Carousel";
 import TextList from "components/category/TextList";
 
 const Page = styled.div`
-  margin-top: 0;
+  margin-top: 0px;
   height: 100%;
   width: 100%;
   background-color: white;
@@ -12,7 +12,7 @@ const Page = styled.div`
 const Desc = styled.div`
   width: 100%;
   height: auto;
-  margin: 4% auto auto auto;
+  margin: 0 auto auto auto;
 `;
 
 const StyledCarousel = styled(Carousel)``;
