@@ -53,7 +53,7 @@ const Register = styled.button`
   height: 60px;
   width: 24%;
 
-  font-family: 나눔고딕;
+  
   background-color:#98916D;
   color: #FFFFF8;
   font-size: 20px;

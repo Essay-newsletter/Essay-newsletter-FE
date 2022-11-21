@@ -55,7 +55,6 @@ const Logo = styled(Link)`
   text-decoration-line: none;
   font-size: 24px;
   font-weight: 600;
-  font-family: 나눔고딕;
 `;
 const LoginBox = styled.button`
   height: 5vh;
