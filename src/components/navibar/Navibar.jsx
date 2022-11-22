@@ -60,7 +60,7 @@ const Logo = styled(Link)`
   font-size: 24px;
   font-weight: 600;
   @media (max-width: 600px) {
-    font-size: 8px;
+    font-size: 20px;
   }
 `;
 const LoginBox = styled.button`
