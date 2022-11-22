@@ -37,7 +37,7 @@ const Nav = styled.li`
   float: left;
   font-size: 1.05rem;
   @media (max-width: 600px) {
-    font-size: 3%;
+    font-size: 0;
   }
 `;
 
