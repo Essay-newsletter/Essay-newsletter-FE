@@ -8,6 +8,7 @@ import SubPage from "./SubPage";
 const Sections = styled.div`
   height: auto;
   width: 100%;
+  overflow-x: hidden;
   background-color: white;
 `;
 //섹션안에 넣었을때랑 차이 ?
