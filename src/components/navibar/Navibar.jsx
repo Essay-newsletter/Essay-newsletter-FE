@@ -35,6 +35,10 @@ const Nav = styled.li`
   align-items: center;
   cursor: pointer;
   float: left;
+  font-size: 1.05rem;
+  @media (max-width: 600px) {
+    font-size: 3%;
+  }
 `;
 
 const LogoBox = styled.div`
@@ -55,6 +59,9 @@ const Logo = styled(Link)`
   text-decoration-line: none;
   font-size: 24px;
   font-weight: 600;
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 `;
 const LoginBox = styled.button`
   height: 5vh;
