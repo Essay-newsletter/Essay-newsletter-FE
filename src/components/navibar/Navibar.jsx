@@ -103,3 +103,4 @@ export default function Navibar() {
     </NavibarSection>
   );
 }
+//반응형 수정 필요
