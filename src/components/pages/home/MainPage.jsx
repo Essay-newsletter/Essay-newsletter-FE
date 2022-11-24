@@ -11,16 +11,16 @@ const Page = styled.div`
 const Desc = styled.div`
   width: 100%;
   height: auto;
-  margin: 16% auto auto auto;
+  margin: 30vh auto 8vh auto;
 `;
 const Title = styled.h1`
-  font-size: 700;
+  font-size: 2.2vw;
   margin-bottom: 16px;
   text-align: center;
   color: #292a34;
 `;
 const Content = styled.p`
-  font-size: 480;
+  font-size: 1.2vw;
   text-align: center;
   color: #3a3c4e;
 `;
@@ -53,13 +53,13 @@ const Register = styled.button`
  
     
   margin: 0 auto auto auto;
-  height: 60px;
+  height: 8vh;
   width: 24%;
-
+  min-width:80px;
   
   background-color:#98916D;
   color: #FFFFF8;
-  font-size: 20px;
+  font-size: 1.6vw;
   font-weight: 400;
   cursor: pointer;
   border-radius: 80px;

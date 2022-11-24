@@ -4,9 +4,6 @@ import styled from "styled-components";
 import Navibar from "../../navibar/Navibar";
 
 const Sections = styled.div`
-  display: grid;
-  height: 100%;
-  width: 100vw;
   background-color: white;
   text-align: center;
 `;
