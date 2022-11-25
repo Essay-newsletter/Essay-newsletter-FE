@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Page = styled.div`
   display: grid;
-
   height: 100vh;
   width: 100%;
   background-color: #f8f6f0;
