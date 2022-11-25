@@ -61,10 +61,12 @@ const Logo = styled(Link)`
   color: #292a34;
   text-decoration-line: none;
 
-  font-size: 1.5vw;
+
+  font-size: calc(18px + 0.4vw);
   font-weight: 600;
   @media screen and (max-width: 768px) {
-    font-size: 1.2vw;
+    font-size: calc(18px + 0.4vw);
+
   }
 `;
 const LoginBox = styled.button`
