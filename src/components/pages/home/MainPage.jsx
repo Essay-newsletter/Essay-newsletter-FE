@@ -3,7 +3,6 @@ import styled from "styled-components";
 import mainimg from "../../assets/img/mainimage.png";
 
 const Page = styled.div`
-
   display: flex;
 
   height: 100vh;
@@ -37,7 +36,6 @@ const Title = styled.h1`
   }
 `;
 const Content = styled.p`
-
   font-size: calc(10px + 0.4vw);
   // text-align: center;
 
@@ -61,7 +59,6 @@ const RegisterDesc = styled.div`
     width: auto;
     display: flex;
   }
-
 `;
 const Register = styled.button`
  
@@ -79,7 +76,7 @@ const Register = styled.button`
   outline: 0px;
 
   &:hover{  
-    width()
+    width: calc(200px + 0.4vw);
     background-color : #E2DCBD;
     color : black;
 
@@ -87,6 +84,10 @@ const Register = styled.button`
     width: calc(140px + 0.4vw);
     display:block;
     margin: 6vh auto auto auto;
+    &:hover{  
+    width: calc(140px + 0.4vw);
+    background-color : #E2DCBD;
+    color : black;
   }
 `;
 
