@@ -61,33 +61,23 @@ const RegisterDesc = styled.div`
   }
 `;
 const Register = styled.button`
- 
-    
-
   margin: 3vh auto auto auto;
   height: 8vh;
   width: calc(200px + 0.4vw);
-  min-width:80px;
-  background-color:#98916D;
-
+  min-width: 80px;
+  background-color: #98916d;
   cursor: pointer;
   border-radius: 80px;
-   border: 0px;
+  border: 0px;
   outline: 0px;
-
-  &:hover{  
-    width: calc(200px + 0.4vw);
-    background-color : #E2DCBD;
-    color : black;
-
   @media screen and (max-width: 768px) {
-    width: calc(140px + 0.4vw);
-    display:block;
+    width: calc(200px + 0.4vw);
     margin: 6vh auto auto auto;
-    &:hover{  
-    width: calc(140px + 0.4vw);
-    background-color : #E2DCBD;
-    color : black;
+  }
+  &:hover {
+    width: calc(200px + 0.4vw);
+    background-color: #e2dcbd;
+    color: black;
   }
 `;
 
