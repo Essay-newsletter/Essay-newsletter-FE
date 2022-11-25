@@ -13,13 +13,17 @@ const Desc = styled.div`
   margin: 30vh auto 8vh auto;
 `;
 const Title = styled.h1`
+
   font-size: calc(20px + 0.4vw);
+
   margin-bottom: 16px;
   text-align: center;
   color: #292a34;
 `;
 const Content = styled.p`
+
   font-size: calc(10px + 0.4vw);
+
   text-align: center;
   color: #3a3c4e;
 `;
@@ -58,7 +62,9 @@ const Register = styled.button`
   
   background-color:#98916D;
   color: #FFFFF8;
+
   font-size: calc(14px + 0.4vw);
+
   font-weight: 400;
   cursor: pointer;
   border-radius: 80px;

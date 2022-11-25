@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-
 import { Link } from "react-router-dom";
 
 const NavibarSection = styled.div`
   position: fixed;
-  height: 10%;
+  height: 8%;
   display: flex;
   width: 100%;
   align-items: center;
@@ -62,10 +61,12 @@ const Logo = styled(Link)`
   color: #292a34;
   text-decoration-line: none;
 
+
   font-size: calc(18px + 0.4vw);
   font-weight: 600;
   @media screen and (max-width: 768px) {
     font-size: calc(18px + 0.4vw);
+
   }
 `;
 const LoginBox = styled.button`
