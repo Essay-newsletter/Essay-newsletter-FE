@@ -18,6 +18,9 @@ const CarouselSection = styled.div`
   margin-right: 25px;
   margin-left: 25px;
   margin: auto;
+  // @media screen and (max-width: 768px) {
+  //   position: fixed;
+  // }
 `;
 // z-index: 순서 부여
 const PageImage = styled.img`
@@ -90,7 +93,23 @@ export default function Carousel() {
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "0px",
+    responsive: [
+      // 반응형 웹 구현 옵션
+      {
+        breakpoint: 960, //화면 사이즈 960px
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768, //화면 사이즈 768px
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
   };
+
   return (
     <CarouselSection>
       <Title>금주 인기 에세이</Title>

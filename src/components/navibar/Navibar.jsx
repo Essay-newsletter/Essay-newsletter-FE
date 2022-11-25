@@ -1,10 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+
+import { useState } from "react";
+import { IoIosMenu } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const NavibarSection = styled.div`
   position: fixed;
-  height: 8%;
+
+  height: 60px;
+
   display: flex;
   width: 100%;
   align-items: center;
@@ -15,6 +20,8 @@ const NavibarSection = styled.div`
 
   @media screen and (max-width: 768px) {
     justify-content: space-between;
+    height: 52px;
+
   }
 `;
 
@@ -43,13 +50,18 @@ const Nav = styled.li`
   align-items: center;
   cursor: pointer;
   float: left;
-  font-size: 1.2vw;
+
+  font-size: calc(4px + 0.8vw);
+
 `;
 
 const LogoBox = styled.div`
   width: 8vw;
   text-align: center;
   @media screen and (max-width: 768px) {
+
+    padding-left: 4%;
+
     width: auto;
   }
 `;
@@ -92,9 +104,44 @@ const LoginBox = styled.button`
   @media screen and (max-width: 768px) {
     display: none;
   }
+
 `;
 
+const IoIoMenu = styled(IoIosMenu)`
+  color:black;
+  }
+`;
+
+const Menubar = styled.a`
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  position: absolute;
+  right: 32px;
+  height: 97px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+const ContlorBox = styled.div`
+  display: flex;
+  align-items: center;
+  display: none;
+  @media screen and (max-width: 500px) {
+    display: "";
+    flex-direction: column;
+    align-items: flex-end;
+    display: ${({ menu }) => {
+      return menu === false ? "none" : "flex";
+    }};
+  }
+
+`;
+
+const Control = styled.div``;
+
 export default function Navibar() {
+  const [menu, setmenu] = useState(false);
   return (
     <NavibarSection>
       <LogoBox>
@@ -110,6 +157,19 @@ export default function Navibar() {
       <Link to="/login">
         <LoginBox>로그인</LoginBox>
       </Link>
+      <ContlorBox menu={menu}>
+        <Control href="/connect">계약</Control>
+        <Control href="/login">로그인</Control>
+        <Control href="/signup">회원가입</Control>
+      </ContlorBox>
+      <Menubar
+        href="#"
+        onClick={() => {
+          setmenu(!menu);
+        }}
+      >
+        <IoIoMenu></IoIoMenu>
+      </Menubar>
     </NavibarSection>
   );
 }
