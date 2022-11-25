@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-
 import { Link } from "react-router-dom";
 
 const NavibarSection = styled.div`
   position: fixed;
-  height: 10%;
+  height: 8%;
   display: flex;
   width: 100%;
   align-items: center;
