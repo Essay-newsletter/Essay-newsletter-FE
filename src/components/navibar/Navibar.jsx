@@ -115,7 +115,9 @@ const Menubar = styled.a`
 const ContlorBox = styled.div`
   display: flex;
   align-items: center;
+  display: none;
   @media screen and (max-width: 500px) {
+    display: "";
     flex-direction: column;
     align-items: flex-end;
     display: ${({ menu }) => {
