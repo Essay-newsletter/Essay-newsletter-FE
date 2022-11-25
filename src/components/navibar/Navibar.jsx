@@ -1,16 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+
 import { Link } from "react-router-dom";
+
 const NavibarSection = styled.div`
   position: fixed;
-  height: 8%;
+  height: 10%;
   display: flex;
   width: 100%;
   align-items: center;
   border-bottom: 1px solid #d9d9d9;
-  padding: 4px 12px 0;
+  padding: 4px 4px 0;
   background-color: white;
   z-index: 10;
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
 `;
 
 // const Bar = styled.div`
@@ -20,67 +26,71 @@ const NavibarSection = styled.div`
 
 const NavBox = styled.ul`
   margin-left: 40%;
+
   list-style: none;
-  height: auto;
+
   width: 40%;
+  justify-content: space-around;
   align-items: center;
   display: flex;
   float: left;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 const Nav = styled.li`
-  margin-left: 10%;
   height: 100%;
-  width: auto;
+  width: 6vw;
   align-items: center;
   cursor: pointer;
   float: left;
-  font-size: 1.05rem;
-  @media (max-width: 600px) {
-    font-size: 0;
-  }
+  font-size: 1.2vw;
 `;
 
 const LogoBox = styled.div`
-  height: auto;
-  width: 100px;
+  width: 8vw;
   text-align: center;
-  align-items: center;
-  cursor: pointer;
-  float: left;
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
 `;
 
 const Logo = styled(Link)`
-  display: flex;
   left: 50%;
   top: 50%;
+
   color: #292a34;
   text-decoration-line: none;
-  text-decoration-line: none;
-  font-size: 24px;
+
+  font-size: calc(18px + 0.4vw);
   font-weight: 600;
-  @media (max-width: 600px) {
-    font-size: 20px;
+  @media screen and (max-width: 768px) {
+    font-size: calc(18px + 0.4vw);
   }
 `;
 const LoginBox = styled.button`
-  height: 5vh;
-  width: 7.5vw;
-  align-items: center;
+  // height: 5vh;
+  // align-items: center;
+  height: 30px;
+  width: 5rem;
   text-aglin: center;
 
   border-radius: 16px;
   border: 0px;
   outline: 0px;
-  color: white;
+  // color: white;
   background-color: #cac4a7;
   color: black;
   font-weight: 500;
-  font-size:14px;
+  font-size: 1rem;
   cursor: pointer;
-  
-  &:hover{  
-    background-color : #E2DCBD;
-    color : black;
+  &:hover {
+    background-color: #e2dcbd;
+    color: black;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export default function Navibar() {
@@ -102,3 +112,4 @@ export default function Navibar() {
     </NavibarSection>
   );
 }
+//반응형 수정 필요
