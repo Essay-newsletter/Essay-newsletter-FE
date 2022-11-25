@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const NavibarSection = styled.div`
   position: fixed;
+
   height: 60px;
+
   display: flex;
   width: 100%;
   align-items: center;
@@ -18,6 +21,7 @@ const NavibarSection = styled.div`
   @media screen and (max-width: 768px) {
     justify-content: space-between;
     height: 52px;
+
   }
 `;
 
@@ -46,14 +50,18 @@ const Nav = styled.li`
   align-items: center;
   cursor: pointer;
   float: left;
+
   font-size: calc(4px + 0.8vw);
+
 `;
 
 const LogoBox = styled.div`
   width: 8vw;
   text-align: center;
   @media screen and (max-width: 768px) {
+
     padding-left: 4%;
+
     width: auto;
   }
 `;
@@ -65,10 +73,12 @@ const Logo = styled(Link)`
   color: #292a34;
   text-decoration-line: none;
 
+
   font-size: calc(18px + 0.4vw);
   font-weight: 600;
   @media screen and (max-width: 768px) {
     font-size: calc(18px + 0.4vw);
+
   }
 `;
 const LoginBox = styled.button`
@@ -94,6 +104,7 @@ const LoginBox = styled.button`
   @media screen and (max-width: 768px) {
     display: none;
   }
+
 `;
 
 const IoIoMenu = styled(IoIosMenu)`
@@ -124,6 +135,7 @@ const ContlorBox = styled.div`
       return menu === false ? "none" : "flex";
     }};
   }
+
 `;
 
 const Control = styled.div``;

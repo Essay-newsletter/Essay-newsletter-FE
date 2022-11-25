@@ -3,7 +3,9 @@ import styled from "styled-components";
 import mainimg from "../../assets/img/mainimage.png";
 
 const Page = styled.div`
+
   display: flex;
+
   height: 100vh;
   width: 100%;
   background-color: #f8f6f0;
@@ -15,6 +17,7 @@ const Page = styled.div`
 const DescText = styled.div`
   width: 100%;
   height: auto;
+
   margin: 42vh auto 8vh calc(10px + 12vw);
 
   @media screen and (max-width: 768px) {
@@ -24,6 +27,7 @@ const DescText = styled.div`
 `;
 const Title = styled.h1`
   font-size: calc(24px + 0.4vw);
+
   margin-bottom: 16px;
 
   color: #292a34;
@@ -33,8 +37,10 @@ const Title = styled.h1`
   }
 `;
 const Content = styled.p`
+
   font-size: calc(10px + 0.4vw);
   // text-align: center;
+
   color: #3a3c4e;
   @media screen and (max-width: 768px) {
     font-size: calc(10px + 0.4vw);
@@ -49,20 +55,24 @@ const Content = styled.p`
 //   height: auto;
 //   padding-bottom: 30vh;
 // `;
+
 const RegisterDesc = styled.div`
   @media screen and (max-width: 768px) {
     width: auto;
     display: flex;
   }
+
 `;
 const Register = styled.button`
  
     
+
   margin: 3vh auto auto auto;
   height: 8vh;
   width: calc(200px + 0.4vw);
   min-width:80px;
   background-color:#98916D;
+
   cursor: pointer;
   border-radius: 80px;
    border: 0px;
