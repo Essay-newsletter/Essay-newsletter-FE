@@ -75,8 +75,10 @@ const Register = styled.button`
   @media screen and (max-width: 768px) {
     width: calc(200px + 0.4vw);
     margin: 6vh auto auto auto;
+
     border: 0px;
     outline: 0px;
+
   }
   &:hover {
     width: calc(200px + 0.4vw);
