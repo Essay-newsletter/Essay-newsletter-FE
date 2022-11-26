@@ -2,7 +2,7 @@ import React from "react";
 import Navibar from "../../navibar/Navibar";
 import styled from "styled-components";
 import MainPage from "./MainPage";
-// import Fade from "react-reveal/Fade";
+import Fade from "react-reveal/Fade";
 import SubPage from "./SubPage";
 
 const Sections = styled.div`
@@ -17,8 +17,11 @@ export default function Home() {
     <>
       <Navibar />
       <Sections>
-        <MainPage />
-        <SubPage />
+        <Fade>
+          <MainPage />
+
+          <SubPage />
+        </Fade>
       </Sections>
     </>
   );
