@@ -126,7 +126,7 @@ const ContlorBox = styled.div`
   }
 `;
 
-const Control = styled.div``;
+// const Control = styled.div``;
 
 export default function Navibar() {
   const [menu, setmenu] = useState(false);
@@ -146,9 +146,9 @@ export default function Navibar() {
         <LoginBox>로그인</LoginBox>
       </Link>
       <ContlorBox menu={menu}>
-        <Control href="/connect">계약</Control>
+        {/* <Control href="/connect">계약</Control>
         <Control href="/login">로그인</Control>
-        <Control href="/signup">회원가입</Control>
+        <Control href="/signup">회원가입</Control> */}
       </ContlorBox>
       <Menubar
         href=""
