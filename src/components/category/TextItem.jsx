@@ -25,10 +25,17 @@ const TextItemBlock = styled.div`
     }
     a {
       // color: black;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
     span {
       line-height: 1.5;
       margin-top: 0.5rem;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
     p {
       margin: 0;

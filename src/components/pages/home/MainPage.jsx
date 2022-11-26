@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import mainimg from "../../assets/img/mainimage.png";
 
@@ -17,7 +18,7 @@ const DescText = styled.div`
   width: 100%;
   height: auto;
 
-  margin: 42vh auto 8vh calc(10px + 12vw);
+  margin: 36vh auto 8vh calc(10px + 12vw);
 
   @media screen and (max-width: 768px) {
     margin: 30vh auto 8vh auto;
@@ -54,10 +55,11 @@ const Content = styled.p`
 //   padding-bottom: 30vh;
 // `;
 
-const RegisterDesc = styled.div`
+const RegisterDesc = styled(Link)`
   @media screen and (max-width: 768px) {
     width: auto;
     display: flex;
+    text-decoration: none;
   }
 `;
 const Register = styled.button`
@@ -73,6 +75,8 @@ const Register = styled.button`
   @media screen and (max-width: 768px) {
     width: calc(200px + 0.4vw);
     margin: 6vh auto auto auto;
+    border: 0px;
+    outline: 0px;
   }
   &:hover {
     width: calc(200px + 0.4vw);
@@ -128,12 +132,8 @@ export default function MainPage() {
             <br />
             누구나 작가가 될 수 있는 공간 글공간입니다.
           </Content>
-          <RegisterDesc>
-            <Register
-              onClick={() => {
-                alert("개발 중");
-              }}
-            >
+          <RegisterDesc to="/register">
+            <Register>
               <RegisterText>작가 등록하기</RegisterText>
             </Register>
           </RegisterDesc>

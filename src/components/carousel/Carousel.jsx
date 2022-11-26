@@ -104,7 +104,7 @@ export default function Carousel() {
       {
         breakpoint: 768, //화면 사이즈 768px
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
         },
       },
     ],
