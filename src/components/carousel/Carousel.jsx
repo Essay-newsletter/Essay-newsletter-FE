@@ -31,6 +31,10 @@ const PageImage = styled.img`
   border-radius: 12px;
   box-shadow: 2px 2px 2px 2px #d9d9d9;
   z-index: 0;
+  @media screen and (max-width: 768px) {
+    height: calc(120px+12vh);
+    width: calc(92px + 10vw);
+  }
 `;
 const StyledSlider = styled(Slider)`
   .slick-list {
