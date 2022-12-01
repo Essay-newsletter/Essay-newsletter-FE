@@ -1,4 +1,5 @@
 import { React, useEffect, useState } from "react";
+// import axios from "axios";
 import styled from "styled-components";
 import TextItem from "./TextItem";
 import { dummy } from "dummy";
@@ -7,7 +8,7 @@ const TextItemBlock = styled.div`
   padding-bottom: 3rem;
   width: 76%;
   margin: 0 auto;
-  margin-top: 4rem;
+  // margin-top: 2rem;
 
   @media screen and (max-width: 768px) {
     wdith: 100%;
@@ -23,21 +24,43 @@ const TextItemBlock = styled.div`
 //   urlToImage: "https://via.placeholder.com/160",
 // };
 // 임시 board 생성 , 1. 파일명 바꾸기. 2. 카테고리 생성
-const TextList = () => {
-  const [writer, setWriter] = useState(dummy);
+const TextList = (category) => {
+  console.log(category.category);
+  const [writer, setWriter] = useState(null);
+  const [loading, setLoading] = useState(null);
+
   // setWriter(dummy);
   useEffect(() => {
-    try {
-      console.log(1);
-      setWriter(dummy);
-    } catch {
-      console.log("error");
-    }
+    // async 비동기 함수호출
+    const fetchData = async () => {
+      // api 호출 시간동안 보여줄 로딩바
+      setLoading(true);
+      try {
+        // const response = await axios.get(
+        //   "https://oyaphovd60.execute-api.ap-northeast-2.amazonaws.com/dev/api/v1/article/list/"
+        // );
+        // console.log(response);
+        setWriter(dummy);
+      } catch (e) {
+        console.log("error", e);
+      }
+      setLoading(false);
+    };
+    fetchData();
   }, [writer]);
   console.log(2);
+
+  // 대기 중
+  if (loading) {
+    return <TextItemBlock>대기 중입니다...</TextItemBlock>;
+  }
+  // articles 값이 설정 안될경우
+  if (!writer) {
+    return null;
+  }
+
   return (
     <TextItemBlock>
-      <h2>작품 보기</h2>
       {writer.data.map((v) => (
         <TextItem key={v.id} data={v} />
       ))}

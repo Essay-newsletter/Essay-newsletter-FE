@@ -10,6 +10,7 @@ export const dummy = {
     {
       id: 1,
       image: insta_sullalee,
+      category: "travel",
       title: "이슬아",
       content: "작품 소개",
       instargram: "instargram",
@@ -19,6 +20,7 @@ export const dummy = {
     {
       id: 2,
       image: insta_moonbong,
+      category: "travel",
       title: "문보영",
       content: "작품 소개",
       instargram: "instargram",
@@ -37,6 +39,7 @@ export const dummy = {
     {
       id: 3,
       image: insta_woowrong,
+      category: "travel",
       title: "우롱센텐스",
       content: "작품 소개",
       instargram: "instargram",

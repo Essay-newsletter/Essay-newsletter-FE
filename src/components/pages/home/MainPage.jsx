@@ -62,7 +62,7 @@ const RegisterDesc = styled(Link)`
     text-decoration: none;
   }
 `;
-const Register = styled.button`
+const RegisterButton = styled.button`
   margin: 3vh auto auto auto;
   height: 8vh;
   width: calc(200px + 0.4vw);
@@ -78,7 +78,6 @@ const Register = styled.button`
 
     border: 0px;
     outline: 0px;
-
   }
   &:hover {
     width: calc(200px + 0.4vw);
@@ -135,9 +134,9 @@ export default function MainPage() {
             누구나 작가가 될 수 있는 공간 글공간입니다.
           </Content>
           <RegisterDesc to="/register">
-            <Register>
+            <RegisterButton>
               <RegisterText>작가 등록하기</RegisterText>
-            </Register>
+            </RegisterButton>
           </RegisterDesc>
         </DescText>
         <DescImg>

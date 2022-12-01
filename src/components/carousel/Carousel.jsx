@@ -45,40 +45,6 @@ const StyledSlider = styled(Slider)`
   .slick-slide {
     cursor: pointer;
   }
-  // .slick-track div {
-  //   width: 100%;
-  // }
-  // .slick-slide div {
-  //   width: auto;
-  // }
-
-  // .slick-slide {
-  //   // 슬라이드 사각형
-  //   padding: 0px 12px 0 12px;
-  //   width: auto;
-  //   height: 100%;
-  //   margin: 0 5px 0px 5px;
-  //   // border: 1px solid #d9d9d9;
-  //   .d {
-  //     //사각형 안에 실제 슬라이드 객체
-
-  //     height: 80%;
-  //     // width: 10px;
-  //     margin: auto;
-  //     // margin-left: 60px; // 시작 슬라이드 왼쪽 간격
-  //     padding-top: 0px;
-  //     padding-bottom: 40px; // 박스 아래 간격 -> 다른 요소와 간격
-
-  //     // // background-color: #f4f4f4; //박스에 색상 없애기.
-  //     // border-radius: 16px;
-  //     // // border: 1px solid #d9d9d9;
-  //     text-align: center;
-  //   }
-  //   img {
-  //   }
-  //   span {
-  //   }
-  // }
 `;
 
 const Title = styled.h2`
