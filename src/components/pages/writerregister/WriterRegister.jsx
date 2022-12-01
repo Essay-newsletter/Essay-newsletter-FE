@@ -36,19 +36,42 @@ export default function WriterRegister() {
     }
   `;
 
+  const Title = styled.h1``;
   const DescText = styled.div`
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     width: auto;
     height: auto;
     margin: auto;
     backgroun-color: white;
+    text-align: center;
     @media screen and (max-width: 768px) {
       margin: 30vh auto 8vh auto;
       // padding: 0 10px 0 10px;
     }
   `;
+  const InputBox = styled.div`
+    margin-bottom: 20px;
+  `;
 
+  const RegisterButton = styled.button`
+  height: 6vh;
+  width: calc(100px + 0.4vw);
+  min-width: 80px;
+  background-color: #98916d;
+  cursor: pointer;
+  border-radius: 80px;
+  border: 0px;
+  outline: 0px;
+  @media screen and (max-width: 768px) {
+    width: calc(100px + 0.4vw);
+    border: 0px;
+    outline: 0px;
+  }
+  &:hover {
+    width: calc(100px + 0.4vw);
+    background-color: #e2dcbd;
+    color: black;`;
   const InputTitle = styled.input``;
   const InputContent = styled.input``;
   const InputUrl = styled.input``;
@@ -58,9 +81,17 @@ export default function WriterRegister() {
       <Navibar />
       <Page>
         <DescText>
-          <InputTitle></InputTitle>
-          <InputContent></InputContent>
-          <InputUrl></InputUrl>
+          <Title>작가등록</Title>
+          <InputBox>
+            <InputTitle placeholder="작가명"></InputTitle>
+          </InputBox>
+          <InputBox>
+            <InputContent placeholder="작품 소개"></InputContent>
+          </InputBox>
+          <InputBox>
+            <InputUrl placeholder="인스타그램 주소"></InputUrl>
+          </InputBox>
+          <RegisterButton>등록 완료</RegisterButton>
         </DescText>
       </Page>
     </>
