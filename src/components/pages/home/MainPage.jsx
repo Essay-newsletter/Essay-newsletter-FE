@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import mainimg from "../../assets/img/mainimage.png";
 
@@ -55,7 +55,7 @@ const Content = styled.p`
 //   padding-bottom: 30vh;
 // `;
 
-const RegisterDesc = styled(Link)`
+const RegisterDesc = styled.a`
   @media screen and (max-width: 768px) {
     width: auto;
     display: flex;
@@ -129,13 +129,14 @@ export default function MainPage() {
             이메일로 매주 간편하게
           </Title>
           <Content>
-            에세이 메일링부터 작가님들의 블로그까지 다양한 글을 만나보세요.
+            {/* 에세이 메일링부터 작가님들의 블로그까지 다양한 글을 만나보세요. */}
+            1월 신간, 다양한 작가님들의 따듯한 에세이 편지를 메일로 받아보세요.
             <br />
             누구나 작가가 될 수 있는 공간 글공간입니다.
           </Content>
-          <RegisterDesc to="/register">
+          <RegisterDesc href="https://forms.gle/xJzUCW4Zxew86wy79">
             <RegisterButton>
-              <RegisterText>작가 등록하기</RegisterText>
+              <RegisterText>에세이 신청하기</RegisterText>
             </RegisterButton>
           </RegisterDesc>
         </DescText>
