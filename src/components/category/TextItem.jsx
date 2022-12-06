@@ -50,7 +50,7 @@ const TextItemBlock = styled.div`
 `;
 
 export default function TextItem({ data }) {
-  const { title, image, content, instargram, url, urlToImage } = data;
+  const { title, image, content, url, urlToImage } = data;
   return (
     <TextItemBlock>
       {urlToImage && (
@@ -63,7 +63,7 @@ export default function TextItem({ data }) {
       <div className="contents">
         <h2>{title}</h2>
         <p>{content}</p>
-        <span>{instargram}: </span>
+        <span>instargram: </span>
         <a href={url} target="_blank" rel="noopener noreferrer">
           <span>{url}</span>
         </a>

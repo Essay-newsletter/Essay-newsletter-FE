@@ -24,8 +24,8 @@ const TextItemBlock = styled.div`
 //   urlToImage: "https://via.placeholder.com/160",
 // };
 // 임시 board 생성 , 1. 파일명 바꾸기. 2. 카테고리 생성
-const TextList = (category) => {
-  console.log(category.category);
+
+const TextList = ({ category }) => {
   const [writer, setWriter] = useState(null);
   const [loading, setLoading] = useState(null);
 
@@ -36,18 +36,22 @@ const TextList = (category) => {
       // api 호출 시간동안 보여줄 로딩바
       setLoading(true);
       try {
+        //props로 넘어온 state로
+        // const query = category === "all" ? "" : `&category = ${category}`;
         // const response = await axios.get(
         //   "https://oyaphovd60.execute-api.ap-northeast-2.amazonaws.com/dev/api/v1/article/list/"
         // );
+
+        // console.log(data);
         // console.log(response);
-        setWriter(dummy);
+        setWriter(dummy); // dummy로 바꾸면 해결됨
       } catch (e) {
         console.log("error", e);
       }
       setLoading(false);
     };
     fetchData();
-  }, [writer]);
+  }, [category]);
   console.log(2);
 
   // 대기 중
